@@ -5,39 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix</title>
-    <link rel="stylesheet" href="/netflix.css" />
-    <!-- CSS only -->
+    <link rel="stylesheet" href="./netflix.css" />
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <style>
-      #body {
-  background-color: black;
-}
-
-#unlimited,
-#enjoy, #qstn {
-  font-size: 50px;
-  font-weight:700;
-}
-#input {
-  width: 600px;
-  height: 60px;
-}
-li{
-    list-style: none;
-}
-    </style>
   </head>
-  <body id="body">
-    <nav class="navbar bg-none mx-5 mb-5 mt-2">
+  <body class="body">
+    <nav class="navbar bg-none mx-3 mx-lg-5">
       <div class="container-fluid">
-        <img src="/Images/NetflixLogo.png" width="140px" alt="" />
-        <form class="d-flex" role="search">
-          <div class="dropdown mx-4">
+        <img src="./images/netflix-logo.png" width="140px" alt="Netflix logo" />
+        <form class="d-flex">
+          <div class="dropdown mx-2 mx-lg-4">
             <button
               class="btn btn-secondary dropdown-toggle"
               type="button"
@@ -54,149 +36,109 @@ li{
         </form>
       </div>
     </nav>
-    <div class="container p-5 py-5 my-5 text-white" align="center" id="one">
-      <h1 class="p-2 mt-5" id="unlimited">Unlimited movies, TV shows and more.</h1>
-      <h2 class="p-2">Watch anywhere. Cancel anytime.</h2>
-      <h6 class="p-2 mt-3">
+
+    <div class="container text-center text-white p-4">
+      <h1>Unlimited movies, TV shows and more.</h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+    </div>
+
+    <div class="container text-white">
+      <div class="row align-items-center my-5">
+        <div class="col-lg-6">
+          <img
+            src="./images/netflix-mobile.png"
+            class="img-fluid"
+            alt="Netflix Mobile"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1>Download your shows to watch offline.</h1>
+          <h4>
+            Save your favourites easily and always have something to watch.
+          </h4>
+        </div>
+      </div>
+
+      <div class="row align-items-center py-5">
+        <div class="col-lg-6 order-lg-1">
+          <h1>Enjoy on your TV.</h1>
+          <h4>
+            Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+            players and more.
+          </h4>
+        </div>
+        <div class="col-lg-6 order-lg-2">
+          <img
+            src="./images/netflix-tv.png"
+            class="img-fluid"
+            alt="Netflix TV"
+          />
+        </div>
+      </div>
+
+      <div class="row align-items-center my-5">
+        <div class="col-lg-6">
+          <img
+            src="./images/netflix-kids.png"
+            class="img-fluid"
+            alt="Netflix kids"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1>Create profiles for children.</h1>
+          <h4>
+            Send children on adventures with their favourite characters in a
+            space made just for them—free with your membership.
+          </h4>
+        </div>
+      </div>
+
+      <div class="row align-items-center py-5">
+        <div class="col-lg-6">
+          <h1>Watch everywhere.</h1>
+          <h4>
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </h4>
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="./images/netflix-festival.png"
+            class="img-fluid"
+            alt="Netflix everywhere"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center text-white py-5">
+      <h5 class="mb-3">
         Ready to watch? Enter your email to create or restart your membership.
-      </h6>
-      <div class="input-group mb-5 mt-4" id="input">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Email address"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-        />
-        <span class="input-group-text fs-5" id="basic-addon2">Get started</span>
+      </h5>
+      <div class="input-group my-4">
+        <input type="text" class="form-control" placeholder="Email address" />
+        <span class="input-group-text fs-5">Get started</span>
       </div>
     </div>
 
-    <div class="container d-flex text-white align-items-center pt-5 mt-5 my-5">
-      <div class="col-6 mx-4">
-        <h1 id="enjoy" class="mb-4 pt-4">Enjoy on your TV.</h1>
-        <h4>
-          Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
-          players and more.
-        </h4>
-      </div>
-      <div class="col-6">
-        <img
-          src="/Images/NetflixTV.png"
-          class="bg-secondary"
-          width="450px"
-          alt=""
-        />
+    <div class="container text-secondary text-center my-4">
+      <button class="btn btn-danger">Connect With Us →</button>
+    </div>
+
+    <div
+      class="container d-flex flex-column flex-md-row justify-content-center text-secondary my-5"
+    >
+      <div class="d-flex align-items-center mb-3 mb-md-0">
+        <img src="./images/netflix-logo.png" width="80px" alt="Netflix logo" />
+        <h6 class="mx-3">© 2022. All rights reserved</h6>
       </div>
     </div>
 
-    <div class="container d-flex text-white align-items-center my-5">
-      <div class="col-6">
-        <img src="/Images/NetflixShows.jpg" width="400px" alt="" />
-      </div>
-      <div class="col-6 mx-4">
-        <h1 id="enjoy" class="mb-4">Download your shows to watch offline.</h1>
-        <h4>Save your favourites easily and always have something to watch.</h4>
-      </div>
-    </div>
-
-    <div class="container d-flex text-white align-items-center py-5 my-5">
-      <div class="col-6 mx-4">
-        <h1 id="enjoy" class="mb-4">Watch everywhere.</h1>
-        <h4>
-          Stream unlimited movies and TV shows on your phone, tablet, laptop,
-          and TV.
-        </h4>
-      </div>
-      <div class="col-6">
-        <img src="/Images/NetflixTV2.png" width="400px" alt="" />
-      </div>
-    </div>
-
-    <div class="container d-flex text-white align-items-center my-5 mt-5">
-      <div class="col-6">
-        <img
-          src="/Images/NetflixChildren.png"
-          width="380px"
-          alt=""
-        />
-      </div>
-      <div class="col-6 mx-5">
-        <h1 id="enjoy" class="mb-4">Create profiles for children.</h1>
-        <h4>
-          Send children on adventures with their favourite characters in a space
-          made just for them—free with your membership.
-        </h4>
-      </div>
-    </div>
-
-    <div class="container py-5" align="center">
-      <div class="text-white">
-        <h5 class="py-3 mt-3">
-          Ready to watch? Enter your email to create or restart your membership.
-        </h5>
-      </div>
-      <div class="input-group mb-5 mt-4" id="input">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Email address"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-        />
-        <span class="input-group-text fs-5" id="basic-addon2">Get started</span>
-      </div>
-    </div>
-
-    <div class="container text-secondary" align="center">
-      <h5 class="my-3">Questions? Call 000-800-040-1843</h5>
-      <div class="d-flex justify-content-around">
-        <ul>
-          <li class="py-2">FAQ</li>
-          <li class="py-2">Investors Relations</li>
-          <li class="py-2">Privacy</li>
-          <li class="py-2">Speed Test</li>
-        </ul>
-        <ul>
-          <li class="py-2">Help Centre</li>
-          <li class="py-2">Jobs</li>
-          <li class="py-2">Cookie Preferences</li>
-          <li class="py-2">Legal Notices</li>
-        </ul>
-        <ul>
-          <li class="py-2">Account</li>
-          <li class="py-2">Ways to Watch</li>
-          <li class="py-2">Corporate Information</li>
-          <li class="py-2">Only on Netflix</li>
-        </ul>
-        <ul>
-          <li class="py-2">Media Centre</li>
-          <li class="py-2">Terms of Use</li>
-          <li class="py-2">Contact Us</li>
-        </ul>
-      </div>
-      <button type="button" class="btn btn-danger px-5 py-2 my-5">Connect With Us &#8594</button>
-    </div>
-
-
-         <div class=" container d-flex justify-content-center my-5 text-secondary ">
-            <div class="d-flex align-items-center col-6">
-              <img src="/Images/NetflixLogo.png" width="80px" alt="">
-              <h6>© 2022. All rights reserved</h6>
-            </div>
-            <div class="col-6">
-              <ul class="d-flex">
-                <li class="px-3">Terms of Use</li>
-                <li class="px-3">Privacy policy</li>
-
-              </ul>
-            </div>
-         </div>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <!-- JavaScript Bundle with Popper -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"
-  ></script>
 </html>
